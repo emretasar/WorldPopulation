@@ -9,4 +9,8 @@ def home_page():
 
 
 def movies_page():
+<<<<<<< HEAD
     return render_template("movies.html")
+=======
+    return render_template("movies.html")
+>>>>>>> 39c08415f98f6334a3c68416f24303eb871c1984
