@@ -8,5 +8,5 @@ def home_page():
     return render_template("home.html", day=day_name)
 
 
-def movies_page():
-    return render_template("movies.html")
+def population_page():
+    return render_template("population.html")
