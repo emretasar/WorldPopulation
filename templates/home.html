@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 {% block title %}Home{% endblock %}
 {% block content %}
-    <h1>World Population Data</h1>
-    <p>Have a nice {{ day }}!</p>
-
+    <h1 style="text-align:center; margin-top: 10px;">World Population Database </h1>
     <ul>
       <li><a href="{{ url_for('population_page') }}">World Population</a></li>
     </ul>
+    <p style="text-align:center; margin-top: 10px;">Have a nice {{ day }}!</p>
+
 {% endblock %}
 

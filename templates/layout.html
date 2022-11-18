@@ -1,17 +1,22 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
     <title>World Population Data- {% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='mymovies.css') }}"/>
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+
   </head>
   <body>
     <header>
         <nav>
-          <ul>
-            <li><a href="{{ url_for('home_page') }}">Home</a></li>
-            <li><a href="{{ url_for('population_page') }}">List World Population Data</a></li>
-          </ul>
+          <div class="btn-group d-flex" role="group">
+            <a href="{{ url_for('home_page') }}" class="btn btn-info btn-lg ms-2">Home Page</a>
+            <a href="{{ url_for('home_page') }}" class="btn btn-info btn-lg">Home Page</a>
+            <a href="{{ url_for('population_page') }}" class="btn btn-info btn-lg">Data Page</a>
+            <a href="{{ url_for('population_page') }}" class="btn btn-info btn-lg me-2">Data Page</a>
+          </div> 
         </nav>
       </header>
       
